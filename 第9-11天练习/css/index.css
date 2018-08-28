@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,img {
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.content {
+    width: 80%;
+}
+.header {
+    overflow: hidden;
+    min-height: 640px;
+    background-image: url(../bg-header.jpg);
+    background-color: aqua;
+    color: white;
+}
+.header h2 {
+    margin-top: 10rem;
+    font:normal 2rem/1.2 sans-serif;
+}
+.header>p {
+    font: normal 1.1rem/1.5 sans-serif;
+    opacity: .7;
+    width: 40rem;
+    margin: 5rem auto;
+}
+.header article {
+    min-height: 10rem;
+    width: 60%;
+    border:1px solid #53514c;
+}
+.header article h3 {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font:normal 1rem/2 sans-serif;
+}
+.header article p {
+    font: normal 0.8rem/2 sans-serif;
+    color: rgba(200,200,200,.3);
+    text-transform: uppercase;
+}
+.header form {
+    padding: 2rem 0;
+}
+.header input {
+    padding-left: 1rem;
+    line-height: 2;
+    border: solid .3px rgba(255,255,255,.2);
+    background-color: rgba(0,0,0,0);
+}
+.header input[type="submit"] {
+    padding-left: 0;
+    text-transform: uppercase;
+    line-height: 2;
+    padding: 0 2rem;
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    .header form input{
+        margin: 1rem 0;
+    }
+    .header article {
+        width: 300px; 
+    }
+}
+
+.function {
+    min-height: 640px;
+    overflow: hidden;
+}
+.function h4 {
+    margin-top: 4rem;
+    color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+}
+.function h2 {
+    margin-top: 2rem;
+    width: 40%;
+    font: normal 2rem/1.5 sans-serif;
+}
+.function div {
+    padding: 5rem 0;
+    width: 70%;
+}
+.function div article {
+    text-align: left;
+    margin: 4% 2%;
+    width: 45%;
+    float: left;
+}
+.function article h3 {
+    font-weight: normal;
+}
+.function article p {
+    margin-top: 1rem;
+    overflow: hidden;
+    color: rgba(0,0,0,.6);
+}
+.function article img {
+
+    float: left;
+    margin-right: 1rem;
+}
+
+.file-section {
+    min-height: 600px;
+    background-image: url(../assets/bigbg2.jpg);
+}
+.file-section article {
+    height: 100%;
+    width: 48%;
+    color: white;
+    line-height: 1.5;
+}
+.file-section article:nth-of-type(1) {
+    float: left;
+    padding-left: 10%;
+}
+.file-section article:nth-of-type(1) h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 25%;
+}
+.file-section article:nth-of-type(1) p {
+    font-weight: 100;
+    margin-top: 5%;
+}
+.file-section article:nth-of-type(1) form {
+    margin-top: 5%;
+}
+.file-section input {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border:solid 1px rgba(200,200,200,.5);
+    line-height: 2.5;
+    padding: 0 2rem;
+}
+.file-section input:hover,
+#file-active {
+    background-color: white;
+    color:black;
+}
+.file-section article:nth-of-type(2) {
+    float: right;
+}
+.file-section article>img {
+    max-height: 80%;
+    max-width: 80%;
+    float: right;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.section4 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+.section4>h2 {
+    flex: 1;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 3%;
+}
+.section4>div {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+}
+.section4>div>article {
+    line-height: 1.5;
+    flex: 1;
+    text-align: center;
+    padding: 0 7%;
+}
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+}
+.section5>article {
+    flex: 1;
+}   
+.section5>article img {
+    flex: 1;
+    width: 40%;
+    height: 80%;
+    margin:5% 0;
+}
+
+.section5>article:nth-of-type(1) div {
+    float: right;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+.section5>article:nth-of-type(2) div {
+    float: left;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.section5>article div{
+    height: 80%;
+    width: 30%;
+    margin-top: 10%;
+    text-align: left;
+}
+
+.section6 h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 6%;
+}
+.section6 p {
+    width: 60%;
+    margin: 3% auto;
+
+}
+.section6>div {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 48%;
+    max-height: 48%;
+    margin: 1%;
+}
+.section6>div>img {
+    position: relative;
+    z-index: 1;
+}
+.section6>div>img:hover {
+    z-index: -1;
+}
+.section6>div>div {
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(50,50,50,0.5);
+}
+.section6>div>div:hover {
+    z-index: 2;
+    cursor: pointer;
+}
+.section6>div>div h3 {
+    margin-top: 30%;
+}
+.section6>div>div li {
+    display: inline-block;
+    margin: 1%;
+}
+
+.section7{
+    margin-bottom:5rem;
+    height: 500px;
+}
+.section7 form {
+    margin: 4% 2%;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    border: solid 1px rgba(200,200,200,.5);
+}
+.section7 input {
+    width: 80%;
+    height: 2rem;
+    padding-left: 1rem;
+    display: block;
+    margin: 3% auto;
+}
+.section7 textarea{
+    padding-left: 1rem;
+    width: 80%;
+    height: 10rem;
+}
+.section7>form>p {
+    margin: 10%;
+    text-transform: uppercase;
+}
+.section7 input[type="submit"] {
+    background-color: black;
+    color: white;
+    line-height: 2;
+    font-size: 1.2rem;
+    border:none;
+}
+.section7>article {
+    margin: 4% 2%;
+     line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+.section7>article h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5;
+}
+.section7>article li {
+    margin: 1rem 0;
+    list-style: none;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+.section7>article li:nth-of-type(1) {
+    background-image: url(../assets/map.png);
+}
+.section7>article li:nth-of-type(2) {
+    background-image: url(../assets/phone.png);
+}
+.section7>article li:nth-of-type(3) {
+    background-image: url(../assets/mail.png);
+}
+footer {
+    min-height: 400px;
+    background-color: black;
+}
